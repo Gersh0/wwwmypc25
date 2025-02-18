@@ -12,15 +12,15 @@ export type RouteConfig = {
 
 export const routerConfig: RouteConfig[] = [
   {
-    id: 'home',
+    id: 'landing',
     name: 'Home',
     path: '/',
-    isPublic: false,
+    isPublic: true,
     icon: Home,
-    showInSidebar: true,
+    showInSidebar: false,
   },
   {
-    id: 'home',
+    id: 'dashboard',
     name: 'Page 2',
     path: '/page-2',
     isPublic: false,
