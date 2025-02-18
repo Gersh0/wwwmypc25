@@ -1,13 +1,16 @@
-import { Title } from '@/components/atomic-design/atoms/texts/title';
-import Link from 'next/link';
+// pages/index.tsx
+
+import { NavBar } from '@/components/atomic-design/molecules/navBar';
 
 const Home = () => {
   return (
-    <div className='h-full w-full'>
-      <Title>Home</Title>
-      <Link href='/page-2'>
-        <a>Go to Page 2</a>
-      </Link>
+    <div
+      className='h-full w-full'
+      style={{
+        background: 'radial-gradient(circle at top right, #AABACA, #FFFFFF 50%, #AABACA 100%)',
+      }}
+    >
+      <NavBar />
     </div>
   );
 };
