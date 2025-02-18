@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <nav className="flex justify-between items-center pl-24 pr-24 w-auto h-[70px]">
       <TitleBar className="mr-96">WWWMYPC</TitleBar>
-      <div className="flex right-5 space-x-7">
+      <div className="flex right-5 space-x-7 text-[#898786]">
         <NoBackgroundButton>Home</NoBackgroundButton>
         <NoBackgroundButton>About</NoBackgroundButton>
         <NoBackgroundButton>Contact</NoBackgroundButton>
