@@ -29,10 +29,14 @@ const NavBar = () => {
       </div>
       <div className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? 'block' : 'hidden'}`}>
         <div className="text-sm lg:flex-grow lg:flex lg:justify-end">
-          <NoBackgroundButton className="block mt-4 lg:inline-block lg:mt-0 text-[#898786] hover:text-gray-400 mr-4">Home</NoBackgroundButton>
-          <NoBackgroundButton className="block mt-4 lg:inline-block lg:mt-0 text-[#898786] hover:text-gray-400 mr-4">About</NoBackgroundButton>
-          <NoBackgroundButton className="block mt-4 lg:inline-block lg:mt-0 text-[#898786] hover:text-gray-400 mr-4">Contact</NoBackgroundButton>
-          <RoundedButton backgroundColor="#032B4D" textColor="#A7B4BE" className="block mt-4 lg:inline-block lg:mt-0 w-20 h-10">FAQS</RoundedButton>
+          <NoBackgroundButton
+            className="block mt-4 lg:inline-block lg:mt-0 text-[#898786] hover:text-gray-400 mr-4">Home</NoBackgroundButton>
+          <NoBackgroundButton
+            className="block mt-4 lg:inline-block lg:mt-0 text-[#898786] hover:text-gray-400 mr-4">About</NoBackgroundButton>
+          <NoBackgroundButton
+            className="block mt-4 lg:inline-block lg:mt-0 text-[#898786] hover:text-gray-400 mr-4">Contact</NoBackgroundButton>
+          <RoundedButton backgroundColor="#032B4D" textColor="#A7B4BE"
+                         className="block mt-4 lg:inline-block lg:mt-0 w-20 h-10">FAQS</RoundedButton>
         </div>
       </div>
     </nav>

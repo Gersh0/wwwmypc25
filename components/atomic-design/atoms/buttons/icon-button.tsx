@@ -8,7 +8,7 @@ type IconButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 
 const IconButton = ({ children, size = 'md', ...props }: IconButtonProps) => {
   return (
-    <Button variant='ghost' className='h-auto p-2 hover:bg-muted' {...props}>
+    <Button variant="ghost" className="h-auto p-2 hover:bg-muted" {...props}>
       {children}
     </Button>
   );

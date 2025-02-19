@@ -1,4 +1,6 @@
 import withTM from 'next-transpile-modules';
+import { webpack } from 'next/dist/compiled/webpack/webpack';
+import Configuration = webpack.Configuration;
 
 const withTranspileModules = withTM([
   'three',
@@ -7,7 +9,12 @@ const withTranspileModules = withTM([
 ]);
 
 const nextConfig = withTranspileModules({
-  webpack(config, options) {
+  reactStrictMode: true,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+
+  webpack(config: Configuration) {
     config.module.rules.push({
       test: /\.(glb|gltf)$/,
       use: {

@@ -7,11 +7,16 @@ type RoundedButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   textColor?: string;
 };
 
-const RoundedButton = ({ children, backgroundColor, textColor, ...props }: RoundedButtonProps) => {
+const RoundedButton = ({
+                         children,
+                         backgroundColor,
+                         textColor,
+                         ...props
+                       }: RoundedButtonProps) => {
   return (
     <button
       className="font-serif"
-      style={{ backgroundColor, color: textColor, borderRadius: '9999px'}}
+      style={{ backgroundColor, color: textColor, borderRadius: '9999px' }}
       {...props}
     >
       {children}

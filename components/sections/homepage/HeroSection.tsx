@@ -4,10 +4,8 @@ import { TitleHome } from '@/components/atomic-design/atoms/texts/titleHome';
 import { ItemText } from '@/components/atomic-design/atoms/texts/itemText';
 import { RoundedButton } from '@/components/atomic-design/atoms/buttons/roundedButton';
 import { Canvas } from '@react-three/fiber';
-import Laptop from '../../atomic-design/atoms/models/Laptop';
-
 import Cube from '@/components/atomic-design/atoms/models/Cube';
-import Cat from '@/components/atomic-design/atoms/models/Cat';
+
 
 const HeroSection = () => {
   const router = useRouter();
@@ -17,7 +15,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="pt-40 pl-32 min-h-screen w-full  relative grid grid-cols-1 xl:grid-cols-2">
+    <section className="pt-40 pl-32 min-h-screen w-full relative grid grid-cols-1 xl:grid-cols-2">
       <div>
         <div className="text-7xl col-span-1">
           <TitleHome>

@@ -8,7 +8,7 @@ import FooterSection from '@/components/sections/homepage/FooterSection';
 const Home = () => {
   return (
     <div
-      className="h-full w-full"
+      className='h-full w-full'
       style={{
         background: 'radial-gradient(circle at top right, #AABACA, #FFFFFF 50%, #AABACA 100%)',
       }}
