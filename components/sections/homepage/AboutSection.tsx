@@ -3,7 +3,7 @@ import React from 'react';
 import { TitleHome } from '@/components/atomic-design/atoms/texts/titleHome';
 import { ItemText } from '@/components/atomic-design/atoms/texts/itemText';
 
-const AboutLayout = () => {
+const AboutSection = () => {
   return (
     <section className="pr-32 pl-32 min-h-screen w-full flex flex-col relative">
       <div className="flex text-center items-center text-4xl max-w-full">
@@ -46,4 +46,4 @@ const AboutLayout = () => {
   );
 };
 
-export { AboutLayout };
+export { AboutSection };

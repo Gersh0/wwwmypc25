@@ -4,7 +4,7 @@ import { TitleHome } from '@/components/atomic-design/atoms/texts/titleHome';
 import { ItemText } from '@/components/atomic-design/atoms/texts/itemText';
 import { RoundedButton } from '@/components/atomic-design/atoms/buttons/roundedButton';
 
-const HeroLayout = () => {
+const HeroSection = () => {
   const router = useRouter();
 
   const handleDiagnoseNowClick = () => {
@@ -52,4 +52,4 @@ const HeroLayout = () => {
   );
 };
 
-export { HeroLayout };
+export { HeroSection };
