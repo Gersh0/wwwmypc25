@@ -6,13 +6,15 @@ import { ItemText } from '@/components/atomic-design/atoms/texts/itemText';
 const AboutLayout = () => {
   return (
     <section className="min-h-screen w-full flex flex-col relative">
-      <div className="text-center">
-        <TitleHome>
+
+      <TitleHome>
+        <div className="text-center text-4xl">
           <p>Unlock the full</p>
           <p>potential of your PC</p>
-        </TitleHome>
-      </div>
-      <div></div>
+        </div>
+      </TitleHome>
+
+  <div></div>
       <div className="grid grid-cols-3 gap-4 mt-8">
         <div className="w-[30%] h-64">
           <TitleHome>Streamlined Diagnostics</TitleHome>

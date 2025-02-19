@@ -3,6 +3,9 @@
 import { NavBar } from '@/components/atomic-design/molecules/navBar';
 import {HeroLayout} from '@/layouts/homeLayouts/HeroLayout';
 import { AboutLayout } from '@/layouts/homeLayouts/AboutLayout';
+import { TitleHome } from '@/components/atomic-design/atoms/texts/titleHome';
+import { ItemText } from '@/components/atomic-design/atoms/texts/itemText';
+import { RoundedButton } from '@/components/atomic-design/atoms/buttons/roundedButton';
 
 const Home = () => {
   return (
@@ -13,8 +16,8 @@ const Home = () => {
       }}
     >
       <NavBar />
-      <HeroLayout/>
-      <AboutLayout/>
+     <HeroLayout />
+      <AboutLayout />
 
     </div>
   );
