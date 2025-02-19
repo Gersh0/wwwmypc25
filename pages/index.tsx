@@ -3,6 +3,7 @@
 import { NavBar } from '@/components/atomic-design/molecules/navBar';
 import { HeroSection } from '@/components/sections/homepage/HeroSection';
 import { AboutSection } from '@/components/sections/homepage/AboutSection';
+import FooterSection from '@/components/sections/homepage/FooterSection';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <NavBar />
       <HeroSection />
       <AboutSection />
+      <FooterSection/>
 
     </div>
   );
