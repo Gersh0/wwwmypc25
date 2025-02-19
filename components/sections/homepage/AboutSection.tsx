@@ -3,7 +3,7 @@ import React from 'react';
 import { TitleHome } from '@/components/atomic-design/atoms/texts/titleHome';
 import { ItemText } from '@/components/atomic-design/atoms/texts/itemText';
 
-const AboutLayout = () => {
+function AboutSection() {
   return (
     <section className="min-h-screen w-full flex flex-col relative">
 
@@ -14,11 +14,11 @@ const AboutLayout = () => {
         </div>
       </TitleHome>
 
-  <div></div>
+      <div></div>
       <div className="grid grid-cols-3 gap-4 mt-8">
         <div className="w-[30%] h-64">
           <TitleHome>Streamlined Diagnostics</TitleHome>
-          <ItemText >
+          <ItemText>
             <p className="text-balance">Our advanced diagnostic tools analyze your system's hardware and software components</p>
           </ItemText>
         </div>
@@ -27,6 +27,6 @@ const AboutLayout = () => {
       </div>
     </section>
   );
-};
+}
 
-export { AboutLayout };
+export { AboutSection };
