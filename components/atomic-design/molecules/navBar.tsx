@@ -27,7 +27,7 @@ const NavBar = () => {
           </svg>
         </button>
       </div>
-      <div className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? 'block' : 'hidden'}`}>
+      <div className={`w-full block flex-grow lg:flex lg:items-center md:w-auto ${isOpen ? 'block' : 'hidden'} lg:w-auto ${isOpen ? 'block' : 'hidden'}`}>
         <div className="text-sm lg:flex-grow lg:flex lg:justify-end">
           <NoBackgroundButton
             className="block mt-4 lg:inline-block lg:mt-0 text-[#898786] hover:text-gray-400 mr-4">Home</NoBackgroundButton>

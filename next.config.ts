@@ -16,9 +16,9 @@ const nextConfig = withTranspileModules({
 
   webpack(config: Configuration) {
     config.module.rules.push({
-      test: /\.(glb|gltf)$/,
+      test: /\.(gltf)$/,
       use: {
-        loader: 'file-loader',
+        loader: 'gltf-loader',
       },
     });
 

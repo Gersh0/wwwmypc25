@@ -4,7 +4,9 @@ import { TitleHome } from '@/components/atomic-design/atoms/texts/titleHome';
 import { ItemText } from '@/components/atomic-design/atoms/texts/itemText';
 import { RoundedButton } from '@/components/atomic-design/atoms/buttons/roundedButton';
 import { Canvas } from '@react-three/fiber';
-import Cube from '@/components/atomic-design/atoms/models/Cube';
+import Cube from '@/public/models/Cube';
+import Laptop from '@/public/models/Laptop';
+
 
 
 const HeroSection = () => {
@@ -15,9 +17,9 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="pt-40 pl-32 min-h-screen w-full relative grid grid-cols-1 xl:grid-cols-2">
-      <div>
-        <div className="text-7xl col-span-1">
+    <section className="pt-40 xl:pl-32 pl-4 min-h-screen w-full relative grid grid-cols-1 xl:grid-cols-2 md:grid-cols-2">
+      <div className="justify-items-center xl:justify-items-start">
+        <div className="text-7xl col-span-1 ">
           <TitleHome>
             <p className="pb-4">Welcome to</p>
             <p>WWWMYPC</p>
@@ -26,7 +28,7 @@ const HeroSection = () => {
         <div className="pt-14 text-[#898786]">
           <ItemText>
             <p>WWWMYPC is a comprehensive PC software and hardware</p>
-            <p> diagnosticator that utilizes a cutting-edge chatbot to help</p>
+            <p> diagnosticator that utilizes a cutting-edge Q&A algorithm to help</p>
             <p>users effortlessly identify and resolve their computer-related </p>
           </ItemText>
         </div>
@@ -54,12 +56,12 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="justify-items-center hidden xl:block">
-        <div className=" w-10/12 h-96 flex pr-32">
+      <div className="justify-items-center hidden xl:block md:block md:justify-items-center">
+        <div className=" w-10/12 h-96 flex xl:pr-32  ">
           <Canvas>
             <ambientLight intensity={Math.PI / 2} />
             <directionalLight position={[10, 10, 5]} />
-            <Cube />
+            <Cube/>
           </Canvas>
         </div>
       </div>
