@@ -6,6 +6,7 @@ import { RoundedButton } from '@/components/atomic-design/atoms/buttons/roundedB
 import { Canvas } from '@react-three/fiber';
 import Cube from '@/public/models/Cube';
 import Laptop from '@/public/models/Laptop';
+import Cat from '@/public/models/Cat';
 
 
 
@@ -61,7 +62,13 @@ const HeroSection = () => {
           <Canvas>
             <ambientLight intensity={Math.PI / 2} />
             <directionalLight position={[10, 10, 5]} />
-            <Cube/>
+            <Cat
+              position={[0, 0, 0]}
+              rotation={[0.2, -0.2, 0]}
+              scale={0.15}
+            />
+
+
           </Canvas>
         </div>
       </div>

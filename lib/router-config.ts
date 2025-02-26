@@ -17,7 +17,7 @@ export const routerConfig: RouteConfig[] = [
     path: '/',
     isPublic: true,
     icon: Home,
-    showInSidebar: false,
+    showInSidebar: true,
   },
   {
     id: 'dashboard',
